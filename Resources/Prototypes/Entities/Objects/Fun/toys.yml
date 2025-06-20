@@ -900,3 +900,57 @@
       params:
         volume: -9
         maxDistance: 3
+
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieLimbus
+  name: Limbus plushie
+  description: Limbus Company real???!!!
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toys.rsi/Goober.png
+    state: icon
+  - type: Item
+    size: Normal
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/LIMBUS_COMPANEHH!!!.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Blood
+          Quantity: 10
+  - type: Tag
+    tags:
+    - ClothMade
+    - Payload
